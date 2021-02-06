@@ -17,6 +17,12 @@ Large.args = {
     src: image,
 };
 
+export const Medium = Template.bind({});
+Medium.args = {
+    size: "medium",
+    src: image,
+};
+
 export const Small = Template.bind({});
 Small.args = {
     size: "small",

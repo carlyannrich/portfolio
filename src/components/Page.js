@@ -1,35 +1,21 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { Header } from "./Header/index";
+import { Section } from "./Section/index";
 import "./page.css";
 
-const Page = () => (
+const Page = ({ content, label }) => (
     <article>
         <Header />
 
-        <section>
-            <h2>Pages in Storybook</h2>
-            <p>
-                Get a guided tutorial on component-driven development at{" "}
-                <a
-                    href="https://www.learnstorybook.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn Storybook
-                </a>
-                . Read more in the{" "}
-                <a
-                    href="https://storybook.js.org/docs"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    docs
-                </a>
-                .
-            </p>
-        </section>
+        <Section content={content} label={label} />
     </article>
 );
+
+Page.propTypes = {
+    content: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+};
 
 export default Page;

@@ -1,18 +1,17 @@
 import React from "react";
 
-import Page from "./Page";
+import { Content } from "./index";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-    title: "Example/Page",
-    component: Page,
+    title: "Example/Content",
+    component: Content,
 };
 
-const Template = (args) => <Page {...args} />;
+const Template = (args) => <Content {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
     content:
         "I am a software tester and developer in training, working in the UK education and library sector.",
-    label: "Click me",
 };
