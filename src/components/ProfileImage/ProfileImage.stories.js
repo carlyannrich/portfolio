@@ -1,12 +1,12 @@
 import React from "react";
 
-import Page from "./Page";
-import * as HeaderStories from "./Header/Header.stories";
+import ProfileImage from "./index";
+import image from "../assets/carly.PNG";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-    title: "Example/Page",
-    component: Page,
+    title: "Example/ProfileImage",
+    component: ProfileImage,
 };
 
 const Template = (args) => <ProfileImage {...args} />;

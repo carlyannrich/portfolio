@@ -4,7 +4,7 @@ import "./home.css";
 
 const label = ["Wow wow woW", "Boom", "Chow"];
 
-export const Home = () => {
+const Home = () => {
     return (
         <div className="Home">
             <section>
@@ -15,3 +15,4 @@ export const Home = () => {
         </div>
     );
 };
+export default Home;
