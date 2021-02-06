@@ -12,7 +12,8 @@ const Template = (args) => <Page {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-    content:
-        "I am a software tester and developer in training, working in the UK education and library sector.",
+    content: "Hello.",
+    content2: "Geia sou",
+    content3: "Kalispera",
     label: "Click me",
 };
