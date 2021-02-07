@@ -1,0 +1,16 @@
+footer {
+    height: 2.5%;
+    width: 100%;
+    background-color: #655D90;
+    margin-top: 3%;
+}
+
+.footer-wrapper {
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: calc(100% - 2.5%);
+}
+
+.twitter-icon {
+    display: inline-block;
+    vertical-align: top;
+}
