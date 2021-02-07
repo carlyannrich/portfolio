@@ -7,10 +7,9 @@
   justify-content: space-between;
 }
 
-img {
+.profile-image {
   display: inline-block;
   vertical-align: top;
-  width: 5%;
 }
 
 h1 {
