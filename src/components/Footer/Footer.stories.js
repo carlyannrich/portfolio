@@ -1,9 +1,9 @@
-import React from "react";
-import { Footer } from "./index";
+import React from 'react';
+import Footer from './index';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: "Example/Footer",
+  title: 'Example/Footer',
   component: Footer,
 };
 

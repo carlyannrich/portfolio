@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
-import "./footer.css";
+import './footer.css';
 
-export const Footer = ({ primary, ...props }) => {
-  const mode = primary ? "footer-align--primary" : "footer-align--secondary";
+const Footer = ({ primary, ...props }) => {
+  const mode = primary ? 'footer-align--primary' : 'footer-align--secondary';
   return (
     <footer className={mode} {...props}>
       <div className="footer-wrapper">
@@ -23,3 +23,5 @@ export const Footer = ({ primary, ...props }) => {
 Footer.propTypes = {
   primary: PropTypes.bool,
 };
+
+export default Footer;

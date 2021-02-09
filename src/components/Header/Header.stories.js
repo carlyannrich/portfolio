@@ -1,9 +1,9 @@
-import React from "react";
-import { Header } from "./index";
+import React from 'react';
+import Header from './index';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: "Example/Header",
+  title: 'Example/Header',
   component: Header,
 };
 

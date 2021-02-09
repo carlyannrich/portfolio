@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import "./content.css";
+import './content.css';
 
-export const Content = ({ content = "test content", ...props }) => (
+const Content = ({ content = 'test content' }) => (
   <section className="content-section">
     <div className="content">
       <h2>{content}</h2>
@@ -12,5 +12,7 @@ export const Content = ({ content = "test content", ...props }) => (
 );
 
 Content.propTypes = {
-  content1: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
 };
+
+export default Content;
