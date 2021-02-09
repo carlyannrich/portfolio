@@ -1,11 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import Button from "./../Button/index";
-import { Content } from "./../Content/index";
-import "./section.css";
+import Button from '../Button/index';
+import Content from '../Content/index';
+import './section.css';
 
-export const Section = ({ content = "test content", label, ...props }) => (
+const Section = ({ content = 'test content', label }) => (
   <section className="section">
     <div className="content">
       <h2>
@@ -22,3 +22,5 @@ Section.propTypes = {
   content: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
 };
+
+export default Section;

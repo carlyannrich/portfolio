@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
-import MenuIcon from "./index";
-import image from "../assets/menu.svg";
+import MenuIcon from './index';
+import image from '../assets/menu.svg';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: "Example/MenuIcon",
+  title: 'Example/MenuIcon',
   component: MenuIcon,
 };
 

@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import image from "../assets/carly.PNG";
-import ProfileImage from "../ProfileImage/index";
-import "./header.css";
+import image from '../assets/carly.PNG';
+import ProfileImage from '../ProfileImage/index';
+import './header.css';
 
-export const Header = ({ primary, ...props }) => {
-  const mode = primary ? "header--primary" : "header--secondary";
+const Header = ({ primary, ...props }) => {
+  const mode = primary ? 'header--primary' : 'header--secondary';
   return (
     <header className={mode} {...props}>
       <div className="wrapper">
@@ -22,3 +22,5 @@ export const Header = ({ primary, ...props }) => {
 Header.propTypes = {
   primary: PropTypes.bool,
 };
+
+export default Header;
