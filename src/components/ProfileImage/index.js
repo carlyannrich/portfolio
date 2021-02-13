@@ -17,9 +17,9 @@ ProfileImage.propTypes = {
   /**
      * How large should the img be?
      */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
-  src: '',
-  alt: '',
+  size: PropTypes.oneOf(['small', 'medium', 'large']).isRequired,
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
 };
 
 export default ProfileImage;

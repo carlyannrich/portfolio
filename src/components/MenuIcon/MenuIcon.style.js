@@ -1,4 +1,6 @@
-.menu-wrapper {
+import styled from 'styled-components';
+
+const StyledMenuIcon = styled.section`
     position: fixed;
     width: 20%;
     /* Full width */
@@ -8,24 +10,16 @@
     bottom: 0;
     left: 92%;
     padding-bottom: 5%;
-}
 
 .menu {
     width: 5%;
     cursor: pointer;
-    background: transparent;
-}
-
-;
-.icon-div {
-    border: 0;
-    cursor: pointer;
-    display: inline-block;
     transition: transform .2s;
-}
 
-.icon-div:hover {
-    transform: scale(1.2);
+    &:hover {
+        transform: scale(1.1);
+  }
 }
+`;
 
-;
+export default StyledMenuIcon;

@@ -5,10 +5,10 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 import './footer.css';
 
-const Footer = ({ primary, ...props }) => {
+const Footer = ({ primary }) => {
   const mode = primary ? 'footer-align--primary' : 'footer-align--secondary';
   return (
-    <footer className={mode} {...props}>
+    <footer className={mode}>
       <div className="footer-wrapper">
         <div>
           <p className="twitter-icon">
@@ -21,7 +21,7 @@ const Footer = ({ primary, ...props }) => {
 };
 
 Footer.propTypes = {
-  primary: PropTypes.bool,
+  primary: PropTypes.bool.isRequired,
 };
 
 export default Footer;
