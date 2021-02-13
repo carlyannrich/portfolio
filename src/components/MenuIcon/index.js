@@ -1,19 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import './MenuIcon.css';
 import image from '../assets/menu.svg';
+import StyledMenuIcon from './MenuIcon.style';
 
 const MenuIcon = ({ src = image, alt = '' }) => (
-  <section className="menu-wrapper">
+  <StyledMenuIcon>
     <div className="menu">
-      <img src={src} className="icon-div" alt={alt} />
+      <img src={src} alt={alt} />
     </div>
-  </section>
+  </StyledMenuIcon>
 );
 
 MenuIcon.propTypes = {
-  src: image,
-  alt: '',
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
 };
 
 export default MenuIcon;
