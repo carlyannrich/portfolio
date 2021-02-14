@@ -9,14 +9,14 @@ export default {
 
 const Template = (args) => <Button {...args} />;
 
-export const Default = Template.bind({});
-
-Default.args = {
-
-};
-
 export const Primary = Template.bind({});
 
 Primary.args = {
   primary: true,
+};
+
+export const Secondary = Template.bind({});
+
+Secondary.args = {
+  primary: false,
 };

@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 import Button from '../Button/index';
 import Content from '../Content/index';
-import './section.css';
+import { StyledSection } from './Section.style';
 
 const Section = ({ content = 'test content', label }) => (
-  <section className="section">
+  <StyledSection className="section">
     <div className="content">
       <h2>
         <Content content={content} />
@@ -15,7 +15,7 @@ const Section = ({ content = 'test content', label }) => (
     <div className="button">
       <Button label={label} />
     </div>
-  </section>
+  </StyledSection>
 );
 
 Section.propTypes = {
