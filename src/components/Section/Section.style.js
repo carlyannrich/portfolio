@@ -1,3 +1,7 @@
+import styled from 'styled-components';
+
+export const StyledSection = styled.div`
+
 .section {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0 auto;
@@ -34,3 +38,7 @@ h2 {
   margin: 0.5%;
   color: #fff;
 }
+
+`;
+
+export const Wrapper = styled.div``;

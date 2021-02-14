@@ -3,22 +3,17 @@ import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
-import './footer.css';
+import { StyledFooter } from './Footer.style';
 
-const Footer = ({ primary }) => {
-  const mode = primary ? 'footer-align--primary' : 'footer-align--secondary';
-  return (
-    <footer className={mode}>
-      <div className="footer-wrapper">
-        <div>
-          <p className="twitter-icon">
-            <FontAwesomeIcon icon={faTwitter} />
-          </p>
-        </div>
-      </div>
-    </footer>
-  );
-};
+const Footer = ({ primary }) => (
+  <StyledFooter primary={primary}>
+    <div className="footer-wrapper">
+      <p className="twitter-icon">
+        <FontAwesomeIcon icon={faTwitter} />
+      </p>
+    </div>
+  </StyledFooter>
+);
 
 Footer.propTypes = {
   primary: PropTypes.bool.isRequired,

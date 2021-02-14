@@ -1,16 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './ProfileImage.css';
 
+import StyledProfileImage from './ProfileImage.style';
+import imagesrc from '../assets/carly.PNG';
 /**
  * Primary UI component for user interaction
  */
-const ProfileImage = ({ size = 'medium', src = '', alt = '' }) => (
-  <img
-    src={src}
-    className={`profile-image profile-image--${size}`}
-    alt={alt}
-  />
+const ProfileImage = ({ size = 'medium', alt = 'Carly Richardson' }) => (
+  <StyledProfileImage>
+    <div>
+      <img
+        src={imagesrc}
+        size={size}
+        alt={alt}
+      />
+    </div>
+  </StyledProfileImage>
 );
 
 ProfileImage.propTypes = {
@@ -18,7 +23,6 @@ ProfileImage.propTypes = {
      * How large should the img be?
      */
   size: PropTypes.oneOf(['small', 'medium', 'large']).isRequired,
-  src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
 };
 
