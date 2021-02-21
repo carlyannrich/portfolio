@@ -3,15 +3,15 @@ import styled from 'styled-components';
 const checkSizes = (size) => {
   const sizes = {
     small: {
-      width: '10%',
+      width: '40%',
       padding: '10px 16px',
     },
     medium: {
-      width: '15%',
+      width: '50%',
       padding: '11px 20px',
     },
     large: {
-      width: '30%',
+      width: '60%',
       padding: '12px 24px',
     },
   };

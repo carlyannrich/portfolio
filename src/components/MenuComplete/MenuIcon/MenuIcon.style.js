@@ -7,9 +7,8 @@ const StyledMenuIcon = styled.section`
     transition: top 0.3s;
     /* Transition effect when sliding down (and up) */
     z-index: 10;
-    bottom: 0;
+    top: 85%;
     left: 92%;
-    padding-bottom: 5%;
 
 .menu {
     width: 5%;

@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 const StyledMenu = styled.nav`
+.menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #2f2f2f;
+  background: black;
   height: 100vh;
   width: 50%
   text-align: left;
@@ -13,6 +14,9 @@ const StyledMenu = styled.nav`
   top: 0;
   right: 0;
   transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+  // eslint-disable-next-line no-confusing-arrow
+  transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
 
   a {
     font-size: 50px;
@@ -29,6 +33,7 @@ const StyledMenu = styled.nav`
       transform: scale(1.1);
     }
   }
+}
 `;
 
 export default StyledMenu;

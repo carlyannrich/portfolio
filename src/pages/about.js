@@ -1,7 +1,18 @@
 import React from 'react';
-import AboutPage from '../components/AboutPage.js';
 
-const About = () => (
-  <AboutPage />
+import Header from '../components/Header/index';
+import Footer from '../components/Footer/index';
+import MenuIcon from '../components/MenuComplete/MenuIcon/index';
+
+const AboutPage = () => (
+  <page className="Home">
+    <MenuIcon />
+    <header>
+      <Header />
+    </header>
+    <footer>
+      <Footer primary="true" />
+    </footer>
+  </page>
 );
-export default About;
+export default AboutPage;
