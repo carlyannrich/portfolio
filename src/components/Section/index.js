@@ -9,11 +9,11 @@ const Section = ({ content = 'test content', label }) => (
   <StyledSection className="section">
     <div className="content">
       <h2>
-        <Content content={content} />
+        {content && <Content content={content} />}
       </h2>
     </div>
     <div className="button">
-      <Button label={label} />
+      {label && <Button label={label} />}
     </div>
   </StyledSection>
 );

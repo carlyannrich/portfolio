@@ -26,12 +26,13 @@
         "ignoreRefs": true
       }
     ],
-    "react/no-did-update-set-state": "error",
-    "react/no-unknown-property": "error",
-    "react/no-unused-prop-types": "error",
-    "react/prop-types": "error",
-    "react/react-in-jsx-scope": "error",
-    "react/jsx-props-no-spreading": "off",
+    "react/no-did-update-set-state": 1,
+    "react/no-unknown-property": 1,
+    "react/no-unused-prop-types": 1,
+    "react/prop-types": 1,
+    "react/react-in-jsx-scope": 1,
+    "react/no-array-index-key": 0,
+    "react/jsx-props-no-spreading": 0,
     "react/jsx-filename-extension": [
       1,
       {

@@ -6,7 +6,7 @@ import './content.css';
 const Content = ({ content = 'test content' }) => (
   <section className="content-section">
     <div className="content">
-      <h2>{content}</h2>
+      {content && <h2>{content}</h2>}
     </div>
   </section>
 );
