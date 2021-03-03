@@ -13,7 +13,7 @@ const Section = ({ content = 'test content', label }) => (
       </h2>
     </div>
     <div className="button">
-      {label && <Button label={label} />}
+      {label && <Button label={label} size="medium" primary />}
     </div>
   </StyledSection>
 );

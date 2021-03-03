@@ -10,7 +10,7 @@ const MenuComplete = () => {
   return (
     <StyledMenuComplete>
       <i>
-        <MenuIcon open={open} setOpen={setOpen} />
+        <MenuIcon open={open} setOpen={setOpen} alt="Twitter Icon" />
       </i>
       <div>
         {open && <Menu open={open} setOpen={setOpen} />}

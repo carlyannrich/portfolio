@@ -5,7 +5,7 @@ export const StyledSection = styled.div`
 .section {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0 auto;
-  padding-top: 1%;
+  padding-top: 20%;
   max-width: 80%;
   color: #fff;
 }

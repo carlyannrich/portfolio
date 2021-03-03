@@ -4,18 +4,15 @@ import PropTypes, { bool, func } from 'prop-types';
 import image from '../../assets/menu.svg';
 import StyledMenuIcon from './MenuIcon.style';
 
-const MenuIcon = ({
-  src = image, alt = '', open, setOpen,
-}) => (
+const MenuIcon = ({ alt = 'Twitter Icon', open, setOpen }) => (
   <StyledMenuIcon open={open} onClick={() => setOpen(!open)}>
     <div className="menu">
-      <img src={src} alt={alt} />
+      <img src={image} alt={alt} />
     </div>
   </StyledMenuIcon>
 );
 
 MenuIcon.propTypes = {
-  src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   open: bool.isRequired,
   setOpen: func.isRequired,

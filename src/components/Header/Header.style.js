@@ -1,40 +1,62 @@
 import styled from 'styled-components';
 
+import device from '../device';
+
 export const StyledHeader = styled.header`
-    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 15px 20px;
-    display: flex;
-    align-items: center;
-    max-width: 60%;
+font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+padding: 15px 0px;
+#container {
+    width: 100%;
+    margin-bottom: 35%;
 
-    @media screen and (min-width: 768px) {
-        font-size: 50px;
+    @media ${device.mobileM} {
+        margin-bottom: 30%;
     }
 
-        @media screen and (min-width: 1025px) {
+    @media ${device.tablet} {
+        margin-bottom: 20%;
+    }
+
+    @media ${device.laptop} {
+        margin-bottom: 15%;
+    }
+}
+
+#containerImg {
+    padding-left: 5%;
+    position: absolute;
+
+    @media ${device.tablet} {
+        padding-left: 10%;
+    }
+
+    @media ${device.laptop} {
+        padding-left: 12%;
+    }
+
+    @media ${device.laptopL} {
+        padding-left: 18%;
+    }
+}
+
+h1 {
+    line-height: 1;
+    font-weight: 900;
+    font-size: 35px;
+    color: white;
+    float: left;
+    padding-left: 32%;
+
+    @media ${device.tablet} {
+        font-size: 45px;
+        padding-left: 38%;
+    }
+
+    @media ${device.laptop} {
         font-size: 60px;
+        padding-left: 38%;
     }
-
-    .profile-image {
-        display: inline-block;
-        vertical-align: top;
-    }
-
-    h1 {
-        font-weight: 900;
-        font-size: 24px;
-        line-height: 1;
-        margin: 2% 2% 2% 2%;
-        display: inline-block;
-        vertical-align: top;
-        color: white;
-        width: 90%;
-
-        @media screen and (min-width: 480px) {
-            font-size: 50px;
-        }
-    }
+}
 `;
 
 export const Wrapper = styled.div``;

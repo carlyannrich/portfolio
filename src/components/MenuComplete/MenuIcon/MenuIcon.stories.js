@@ -1,7 +1,7 @@
 import React from 'react';
 
 import MenuIcon from './index';
-import image from '../assets/menu.svg';
+import image from '../../assets/menu.svg';
 
 export default {
   title: 'Components/MenuIcon',

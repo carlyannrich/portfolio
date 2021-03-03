@@ -9,7 +9,7 @@ const Footer = ({ primary }) => (
   <StyledFooter primary={primary}>
     <div className="footer-wrapper">
       <p className="twitter-icon">
-        <FontAwesomeIcon icon={faTwitter} />
+        <FontAwesomeIcon icon={faTwitter} aria-label="Click to view Twitter" />
       </p>
     </div>
   </StyledFooter>

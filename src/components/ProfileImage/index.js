@@ -3,15 +3,12 @@ import PropTypes from 'prop-types';
 
 import StyledProfileImage from './ProfileImage.style';
 import imagesrc from '../assets/carly.PNG';
-/**
- * Primary UI component for user interaction
- */
-const ProfileImage = ({ size = 'medium', alt = 'Carly Richardson' }) => (
-  <StyledProfileImage>
-    <div>
+
+const ProfileImage = ({ size, alt = 'Carly Richardson' }) => (
+  <StyledProfileImage size={size}>
+    <div id="imageDiv">
       <img
         src={imagesrc}
-        size={size}
         alt={alt}
       />
     </div>
