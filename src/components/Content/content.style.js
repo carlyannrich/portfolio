@@ -1,8 +1,12 @@
+import styled from 'styled-components';
+
+import device from '../assets/device';
+
+const StyledContent = styled.div`
 .content-section {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0 auto;
-  max-width: 80%;
-  color: #fff;
+  width: 70%;
+
 }
 
 .grid-container {
@@ -21,7 +25,20 @@
 }
 
 h2 {
-  font-size: 20px;
-  line-height: 1.2;
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 1.5;
   text-align: center;
+  color: #fff;
+
+    @media ${device.tablet} {
+      font-size: 18px;
+    }
+
+    @media ${device.laptop} {
+      font-size: 20px;
+    }
 }
+`;
+
+export default StyledContent;

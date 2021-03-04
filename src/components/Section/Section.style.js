@@ -1,14 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledSection = styled.div`
-
-.section {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  margin: 0 auto;
-  padding-top: 20%;
-  max-width: 80%;
-  color: #fff;
-}
+margin-top: 4%;
 
 .grid-container {
   display: grid;
@@ -22,7 +15,6 @@ export const StyledSection = styled.div`
   grid-area: content;
   display: flex;
   justify-content: center;
-  margin: 0.5%;
 }
 
 h2 {
@@ -35,7 +27,6 @@ h2 {
   grid-area: button;
   display: flex;
   justify-content: center;
-  margin: 0.5%;
   color: #fff;
 }
 

@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
-import device from '../device';
+import device from '../assets/device';
 
 export const StyledHeader = styled.header`
-font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 padding: 15px 0px;
 #container {
     width: 100%;
@@ -14,28 +13,24 @@ padding: 15px 0px;
     }
 
     @media ${device.tablet} {
-        margin-bottom: 20%;
+        margin-bottom: 25%;
     }
 
     @media ${device.laptop} {
-        margin-bottom: 15%;
+        margin-bottom: 16%;
     }
 }
 
 #containerImg {
-    padding-left: 5%;
+    padding: 5% 0 0 5%;
     position: absolute;
 
     @media ${device.tablet} {
-        padding-left: 10%;
+        padding: 5% 0 0 12%;
     }
 
     @media ${device.laptop} {
-        padding-left: 12%;
-    }
-
-    @media ${device.laptopL} {
-        padding-left: 18%;
+        padding: 4% 0 0 27%;
     }
 }
 
@@ -46,15 +41,17 @@ h1 {
     color: white;
     float: left;
     padding-left: 32%;
+    font-family: 'Nixie One';
 
     @media ${device.tablet} {
-        font-size: 45px;
-        padding-left: 38%;
+        font-size: 58px;
+        padding: 0 0 0 38%;
     }
 
     @media ${device.laptop} {
         font-size: 60px;
-        padding-left: 38%;
+        padding: 2% 0 0 45%;
+        width: 30%;
     }
 }
 `;

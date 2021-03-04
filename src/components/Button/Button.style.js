@@ -27,14 +27,13 @@ const checkSizes = (size) => {
 
 const StyledButton = styled.button`
   transition: transform .2s;
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-family: 'Roboto';
   border: ${({ primary }) => (primary ? '0' : '5px')};
   border-radius: 3em;
   cursor: pointer;
   display: inline-block;
   line-height: 1;
-  color:  ${({ primary }) => (primary ? 'white' : '#655D90')};
+  color:  ${({ primary }) => (primary ? '#000' : '#655D90')};
   background-color: ${({ primary }) => (primary ? '#655D90' : 'white')};
   padding: ${({ size }) => checkSizes(size).padding};
   max-width: ${({ size }) => checkSizes(size).width};
