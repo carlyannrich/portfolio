@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import StyledProfileImage from './ProfileImage.style';
-import imagesrc from '../assets/carly.PNG';
+import imagesrc from '../../assets/carly.PNG';
 
 const ProfileImage = ({ size, alt = 'Carly Richardson' }) => (
   <StyledProfileImage size={size}>

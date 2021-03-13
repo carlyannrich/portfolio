@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import device from '../../assets/device';
+import device from '../../../assets/device';
 
 const StyledMenu = styled.nav`
 .menu {

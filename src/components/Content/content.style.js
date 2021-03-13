@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import device from '../assets/device';
+import device from '../../assets/device';
 
 const StyledContent = styled.div`
 .content-section {

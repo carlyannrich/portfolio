@@ -1,27 +1,45 @@
 import styled from 'styled-components';
 
+import device from '../../assets/device';
+
 export const StyledFooter = styled.footer`
-    height: 2.5%;
-    width: 100%;
-    background-color: #655D90;
-    margin-top: 3%;
-}
+width: 100%;
+background-color: #000;
+
+    @media ${device.tablet} {
+    }
+
+    @media ${device.laptop} {
+    }
 
 .footer-wrapper {
-    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    height: calc(100% - 2.5%);
+    @media ${device.tablet} {
+    }
+
+    @media ${device.laptop} {
+    }
 }
 
-.twitter-icon {
+.icon-wrapper {
     cursor: pointer;
-    display: inline-block;
-    vertical-align: top;
     margin-left: 2%;
     transition: transform .2s;
         &:hover {
         transform: scale(1.3);
     }
 }
+
+.twitter-icon {
+    color: white;
+}
+
+#footer-content {
+    color: white;
+    font-family: 'Roboto';
+    display: inline;
+    padding: 0 0 0 1%;
+}
+
 
 `;
 

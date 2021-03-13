@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes, { bool, func } from 'prop-types';
 
-import image from '../../assets/menu.svg';
+import image from '../../../assets/menu.svg';
 import StyledMenuIcon from './MenuIcon.style';
 
 const MenuIcon = ({ alt = 'Twitter Icon', open, setOpen }) => (

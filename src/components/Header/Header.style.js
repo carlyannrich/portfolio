@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import device from '../assets/device';
+import device from '../../assets/device';
 
 export const StyledHeader = styled.header`
 padding: 15px 0px;
@@ -42,6 +42,7 @@ h1 {
     float: left;
     padding-left: 32%;
     font-family: 'Nixie One';
+    width: 30%;
 
     @media ${device.tablet} {
         font-size: 58px;
@@ -51,7 +52,6 @@ h1 {
     @media ${device.laptop} {
         font-size: 60px;
         padding: 2% 0 0 45%;
-        width: 30%;
     }
 }
 `;
